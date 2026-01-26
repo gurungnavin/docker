@@ -77,3 +77,36 @@ docker start -ai <container_id>
 ```bash
 docker rm <container_id>
 ```
+
+
+
+## Docker Commands
+- Downloads an image from Docker Hub (like downloading an app).
+```bash
+docker pull IMAGE_NAME
+```
+
+- Shows all images you have downloaded on your machine.
+```bash
+docker images
+```
+
+- Creates a container from the image and runs it.
+```bash
+docker run IMAGE_NAME
+```
+
+- Run image in interactive terminal (FIXED ❗)
+```bash
+docker run -it IMAGE_NAME
+```
+
+- Stop a running container
+```bash
+docker stop CONT_NAME or CONT_ID
+```
+
+- Start a stopped container
+```bash
+docker start CONT_NAME or CONT_ID
+```
