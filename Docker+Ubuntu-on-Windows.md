@@ -78,9 +78,11 @@ docker start -ai <container_id>
 docker rm <container_id>
 ```
 
+- Remove a image
+```bash
+docker rmi <image_id>
+```
 
-
-## Docker Commands
 - Downloads an image from Docker Hub (like downloading an app).
 ```bash
 docker pull IMAGE_NAME
@@ -110,3 +112,35 @@ docker stop CONT_NAME or CONT_ID
 ```bash
 docker start CONT_NAME or CONT_ID
 ```
+
+
+## IMAGES VS CONTAINER : Ultra-short version:
+
+- Image = blueprint (template, not running)
+
+- Container = built house (running thing made from image)
+
+Yes — using one image, we can create many containers 👍
+
+
+### What is Docker Hub
+Docker Hub is an online store for Docker images.
+- We download images from it
+- We can upload your own images to it
+
+example
+```bash
+docker pull ubuntu
+docker pull node
+docker pull nginx
+```
+
+Other common Docker Hub images:
+
+- `node` → Node.js environment
+- `nginx` → Web server
+- `mysql` → MySQL database
+- `postgres` → PostgreSQL database
+- `redis` → Cache / in-memory DB
+- `python` → Python environment
+- `mongo` → MongoDB
