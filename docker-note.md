@@ -5,6 +5,14 @@ After following this guide, you will have a fully working Linux + Docker environ
 
 ---
 
+# Overview
+- [Install WSL 2 and Ubuntu](https://github.com/gurungnavin/docker/tree/main?tab=readme-ov-file#step-1-install-wsl-2-and-ubuntu)  
+- [Install Docker Desktop on Windows](https://github.com/gurungnavin/docker/tree/main?tab=readme-ov-file#step-2--install-docker-desktop-on-windows)  
+- [Verify Docker](https://github.com/gurungnavin/docker/tree/main?tab=readme-ov-file#step-3-verify-docker)  
+- [Run Ubuntu container inside Docker](https://github.com/gurungnavin/docker/tree/main?tab=readme-ov-file#step-4-run-ubuntu-container-inside-docker)  
+- [Manage containers](https://github.com/gurungnavin/docker/tree/main?tab=readme-ov-file#step-5-manage-containers)  
+- [IMAGES VS CONTAINER : Ultra-short version:](https://github.com/gurungnavin/docker/tree/main?tab=readme-ov-file#images-vs-container--ultra-short-version)
+
 ## Step 1: Install WSL 2 and Ubuntu
 
 1. Enable WSL 2 on Windows:
