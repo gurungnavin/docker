@@ -191,3 +191,5 @@ Before understanding image layers, we should know how an image is formed.
 - Efficiency: Only changed layers are rebuilt.
 - Versioning: Easy to track and roll back changes.
 - Space Saving: Shared layers save disk space.
+  
+<img width="1519" height="522" alt="docker image layers reused" src="https://github.com/user-attachments/assets/7a08cf71-17f3-472a-a285-9b75f51b5b9c" />
