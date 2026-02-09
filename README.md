@@ -12,6 +12,7 @@ After following this guide, you will have a fully working Linux + Docker environ
 - [Run Ubuntu container inside Docker](https://github.com/gurungnavin/docker/tree/main?tab=readme-ov-file#step-4-run-ubuntu-container-inside-docker)  
 - [Manage containers](https://github.com/gurungnavin/docker/tree/main?tab=readme-ov-file#step-5-manage-containers)  
 - [IMAGES VS CONTAINER : Ultra-short version:](https://github.com/gurungnavin/docker/tree/main?tab=readme-ov-file#images-vs-container--ultra-short-version)
+- [Docker IMAGES Layers](https://github.com/gurungnavin/docker/tree/main?tab=readme-ov-file#images-vs-container--ultra-short-version)
 
 ## Step 1: Install WSL 2 and Ubuntu
 
@@ -174,3 +175,19 @@ docker run -d IMAGE_NAME
 ```bash
 docker run --name CONT_NAME -d IMAGE_NAME
 ```
+
+---
+
+### Docker Image Layers
+Before understanding image layers, we should know how an image is formed.
+
+- A Docker image is not just one big file.
+- It is made of multiple layers stacked on top of each other, like a `sandwich`.
+- Each layer represents a set of changes: `installing software`, `adding files`, or `setting configuration`.
+
+### Advantages of Docker Images
+
+- Reusability: Layers can be reused for new containers.
+- Efficiency: Only changed layers are rebuilt.
+- Versioning: Easy to track and roll back changes.
+- Space Saving: Shared layers save disk space.
