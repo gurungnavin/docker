@@ -200,3 +200,4 @@ Before understanding image layers, we should know how an image is formed.
 
 ### Port Binding
 Port binding is connecting a port inside a Docker container to a port on your computer.
+<img width="597" height="360" alt="ports binding with container" src="https://github.com/user-attachments/assets/f4a60a60-715e-48a9-915d-023fa61631fb" />
