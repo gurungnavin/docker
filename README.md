@@ -199,3 +199,4 @@ Before understanding image layers, we should know how an image is formed.
 
 
 ### Port Binding
+Port binding is connecting a port inside a Docker container to a port on your computer.
