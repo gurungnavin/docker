@@ -13,6 +13,7 @@ After following this guide, you will have a fully working Linux + Docker environ
 - [Manage containers](https://github.com/gurungnavin/docker/tree/main?tab=readme-ov-file#step-5-manage-containers)  
 - [IMAGES VS CONTAINER : Ultra-short version:](https://github.com/gurungnavin/docker/tree/main?tab=readme-ov-file#images-vs-container--ultra-short-version)
 - [Docker IMAGES Layers](https://github.com/gurungnavin/docker/tree/main?tab=readme-ov-file#images-vs-container--ultra-short-version)
+- [Port Binding](https://github.com/gurungnavin/docker/tree/main?tab=readme-ov-file#port-binding)
 
 ## Step 1: Install WSL 2 and Ubuntu
 
@@ -200,4 +201,28 @@ Before understanding image layers, we should know how an image is formed.
 
 ### Port Binding
 Port binding is connecting a port inside a Docker container to a port on your computer.
+
 <img width="597" height="360" alt="ports binding with container" src="https://github.com/user-attachments/assets/f4a60a60-715e-48a9-915d-023fa61631fb" />
+
+#### 📌 How to Bind a Port in Docker?
+
+```bash
+docker run -p 8080:3000 image_name
+```
+For Example
+```bash
+docker run -d -e MYSQL_ROOT_PASSWORD=secret --name mysql-latest -p8080:3306 mysql
+```
+
+##### What Happens Here?
+- `docker run -d` → Create and run the container in the background
+- `-e MYSQL_ROOT_PASSWORD=secret` → Set the MySQL root password
+- `--name mysql-latest` → Assign a name to the container
+- `-p 8080:3306` → Bind host port 8080 to container port 3306
+- `mysql` → Use the MySQL image to create the container
+
+#### Why We Need Port Binding?
+- We can access the container’s service from our computer
+- We can connect to databases or apps inside the container
+- Traffic from our browser or apps can reach the container
+- Without it, the container runs but we cannot access it from outside Docker
